@@ -37,14 +37,13 @@ async function run() {
 async function start() {
 
     // Set how many jobs will run concurrently.
-    //queue.setConcurrency(100);
-    queue.setConcurrency(1);
+    queue.setConcurrency(100);
 
     // Run once immediately after start.
     run();
 
     // Run once every minute.
-    /*setInterval(
+    setInterval(
         async () => {
             if (esi.getErrorResponseCount() >= esi.getErrorThreshold()) {
                 const status = await esi.getStatus();
@@ -63,7 +62,7 @@ async function start() {
             run();
         },
         60000
-    );*/
+    );
 
 }
 

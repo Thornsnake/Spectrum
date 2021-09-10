@@ -23,7 +23,7 @@ async function load() {
     //await moduleCleanup.start();
     await new Promise(resolve => setTimeout(resolve, 10000));
     await moduleDefault.start();
-    //await moduleNotification.start();
+    await moduleNotification.start();
 }
 
 module.exports.data = data;

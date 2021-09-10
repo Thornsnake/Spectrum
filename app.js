@@ -19,18 +19,18 @@ async function init() {
     await bot.startBot();
 
     // Start monitoring of system resources.
-    //await monitoring.displaySystemResources();
+    await monitoring.displaySystemResources();
 
     // Create the default namespace for sockets.
     // This is used for web communication that is not server specific.
     // An example would be a user's authentication page, where he has an overview over all characters the bot is managing on all servers.
-    //await socket.createDefaultNamespace();
+    await socket.createDefaultNamespace();
 
     // Start up all modules and begin their job intervals.
     await modules.load();
     
     // Start the webserver and accept connections.
-    //await web_server.startWebserver();
+    await web_server.startWebserver();
 
 }
 

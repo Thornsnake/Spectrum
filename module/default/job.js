@@ -555,31 +555,28 @@ async function run(serverId) {
             await disk.writeFile("./data/discord/server/" + serverId + "/conditions.json", conditions);
         }
 
-        await bot.send_message_to_operators(serverId, "Hello server owners and bot operators!\n\nUnfortunately the latest update to the SSO broke the token authentication of Spectrum. I currently can not find the needed free time to fix the issue.\n\nI'm sorry to say, but Spectrum will probably remain offline for the foreseeable future.\n\nI am currently working on open sourcing the code so someone else might be able to pick up where I left.\n\nIt's been great working with you guys and I hope you'll be able to find a good replacement in the meantime. I would have prefered if it did not end so abruptly and gave you some time to switch.\n\nThank you!");
-        return;
-
         // Create the server socket for web communication.
         // This will do nothing if the socket already exists.
-        /*await socket.createNamespace(serverId);
+        await socket.createNamespace(serverId);
 
         if (esi.getErrorResponseCount() >= esi.getErrorThreshold()) {
             return;
-        }*/
+        }
 
         // Abort if the bot is not active.
-        /*const isActive = await botIsActive(serverId);
+        const isActive = await botIsActive(serverId);
 
         if (!isActive) {
             return;
-        }*/
+        }
 
         // Get the rules on this server.
-        /*const rules = await disk.loadFile("./data/discord/server/" + serverId + "/rules.json");
+        const rules = await disk.loadFile("./data/discord/server/" + serverId + "/rules.json");
 
         // If the server has no rules, abort.
         if (!rules) {
             return;
-        }*/
+        }
 
         // Get the server.
         const server = await discordQueue.add(
