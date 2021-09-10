@@ -1,0 +1,16 @@
+﻿.keyword-header {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DDDDDD;
+    background: #222222;
+}
+
+.keyword-description {
+    width: 100%;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    color: #FFFFFF;
+}

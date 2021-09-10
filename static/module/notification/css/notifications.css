@@ -1,0 +1,14 @@
+﻿.notification-header {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 32px;
+    font-weight: bold;
+    color: #DDDDDD;
+    background: #222222;
+}
+
+.notification-description {
+    margin: 5px;
+    font-size: 18px;
+    color: #FFFFFF;
+}

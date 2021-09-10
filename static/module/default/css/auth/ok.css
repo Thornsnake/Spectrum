@@ -1,0 +1,32 @@
+﻿#callback {
+    box-sizing: border-box;
+    position: absolute;
+    left: calc(50% - 250px);
+    top: 50px;
+    width: 500px;
+    max-height: 700px;
+    background-color: #e0ffe0;
+    border: solid #3498db 1px;
+    padding: 5px;
+}
+
+#header {
+    color: #ffffff;
+    font-size: 20px;
+    background: #3498db;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#message {
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#information {
+    padding: 5px;
+    font-weight: bold;
+    text-align: left;
+}

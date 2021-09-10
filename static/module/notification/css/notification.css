@@ -1,0 +1,65 @@
+﻿.notification-header {
+    font-size: 26px;
+    font-weight: bold;
+    color: #DDDDDD;
+}
+
+.notification-description {
+    font-size: 18px;
+    color: #DDDDDD;
+}
+
+.filter-header {
+    font-size: 20px;
+    font-weight: bold;
+    color: #DDDDDD;
+}
+
+.selection-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #DDDDDD;
+}
+
+.selection-description {
+    font-size: 14px;
+    font-weight: bold;
+    color: #AAAAAA;
+}
+
+.selection-option {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding: 5px;
+    border: solid 3px #FFFFFF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #333333;
+}
+
+.filter-faction, .filter-alliance, .filter-corporation {
+    width: 100%;
+    height: 32px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.filter-faction {
+    background: #AAAADD;
+}
+
+.filter-alliance {
+    background: #99DDDD;
+}
+
+.filter-corporation {
+    background: #AADDAA;
+}

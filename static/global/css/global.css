@@ -1,0 +1,115 @@
+﻿html, body, body > div {
+    height: 100%;
+}
+
+.area {
+    padding: 5px;
+}
+
+.with-border {
+    border: solid 3px #000000;
+    box-shadow: 2px 1px;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    margin: 5px 0px 5px 0px;
+    border: solid 1px #FFFFFF;
+    background: #000000;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-static {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.flex-dynamic {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.navigation-panel {
+    padding: 10px;
+    background: #333333;
+}
+
+.navigation-item {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 2px;
+    border: solid 1px #FFFFFF;
+    border-radius: 2px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #45484d 0%,#000000 100%);
+}
+
+    .navigation-item:hover {
+        background: linear-gradient(to bottom, #b9ae11 0%,#bf7601 100%);
+    }
+
+    .navigation-item[selected] {
+        background: linear-gradient(to bottom, #b9ae11 0%,#bf7601 100%);
+    }
+
+.navigation-image {
+    width: 26px;
+    height: 26px;
+    margin: 2px;
+    border-radius: 2px;
+}
+
+.navigation-title {
+    margin: 5px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.content {
+    height: 100%;
+    padding: 10px;
+    overflow: auto;
+    flex-wrap: wrap;
+    background: #333333;
+}
+
+button {
+    height: 32px;
+    padding: 5px;
+    border: solid 3px #FFFFFF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #333333;
+    white-space: nowrap;
+}
+
+    button:hover {
+        cursor: pointer;
+    }
+
+        button:hover[new] {
+            border-color: #55FF55;
+            color: #55FF55;
+        }
+
+        button:hover[edit] {
+            border-color: #FFFF55;
+            color: #FFFF55;
+        }
+
+        button:hover[delete] {
+            border-color: #FF5555;
+            color: #FF5555;
+        }

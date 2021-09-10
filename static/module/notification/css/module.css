@@ -1,0 +1,54 @@
+﻿.action-header {
+    padding: 5px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #222222;
+}
+
+.action-description {
+    width: 100%;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.action-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: #222222;
+}
+
+.action-option {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: #222222;
+    cursor: pointer;
+}
+
+.action-option-description {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.action-option-checkbox {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding: 5px;
+    border: solid 3px #FFFFFF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #333333;
+}

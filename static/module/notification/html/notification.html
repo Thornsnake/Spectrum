@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/global/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/global/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/module/notification/css/notification.css">
+
+    <title>Spectrum - Configuration</title>
+</head>
+<body>
+    <div id="main" class="flex-row">
+        <!-- Navigation -->
+        <div class="flex-column flex-static navigation-panel" style="width: 240px; overflow: auto;">
+            <div id="module" class="flex-row flex-static navigation-item" onclick="window.location='/module/notification/html/module.html';">
+                <img class="navigation-image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxMjAwIiB2aWV3Qm94PSIwIDAgMTIwMCAxMjAwIj48Zz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMDAwMDAwIj48L3JlY3Q+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjAwIDYwMCkgc2NhbGUoMC42OSAwLjY5KSByb3RhdGUoMCkgdHJhbnNsYXRlKC02MDAgLTYwMCkiIHN0eWxlPSJmaWxsOiNGRkZGRkY7Ij48c3ZnIGZpbGw9IiNGRkZGRkYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZGF0YS1uYW1lPSJMYXllciAxIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeD0iMHB4IiB5PSIwcHgiPjx0aXRsZT43NyBhbGw8L3RpdGxlPjxwYXRoIGQ9Ik0xMDAuNDEsNTcuMjNhMy40NywzLjQ3LDAsMCwwLS4xNC0uNDVsLS4wNS0uMTVhMy41LDMuNSwwLDAsMC0uMjgtLjUyTDk5Ljg1LDU2YTMuNDksMy40OSwwLDAsMC0uMzEtLjM3bC0uMTItLjEyYTMuNDgsMy40OCwwLDAsMC0uMzktLjMybC0uMDktLjA3YTMuNDksMy40OSwwLDAsMC0uNDctLjI2bC0xNS02LjkyLDAtNC43N2ExMy41MywxMy41MywwLDAsMC02LjgtMTEuNjdsLTYtMy40NVYxNS42OWEzLjQ5LDMuNDksMCwwLDAtLjA2LS42M2MwLS4wNiwwLS4xMiwwLS4xOGEzLjQ4LDMuNDgsMCwwLDAtLjE0LS40NGwtLjA2LS4xNWEzLjUsMy41LDAsMCwwLS4yOC0uNTJsLS4wOC0uMTFhMy40OSwzLjQ5LDAsMCwwLS4zLS4zNmwtLjEzLS4xM2EzLjQ5LDMuNDksMCwwLDAtLjM4LS4zMWwtLjEtLjA3YTMuNDksMy40OSwwLDAsMC0uNDctLjI2TDUyLjQ3LDUuMDlhMy41LDMuNSwwLDAsMC0yLjkzLDBMMzMuNDYsMTIuNTFhMy40OSwzLjQ5LDAsMCwwLS40Ny4yNmwtLjEuMDdhMy40OSwzLjQ5LDAsMCwwLS4zOC4zMWwtLjEzLjEzYTMuNDksMy40OSwwLDAsMC0uMy4zNmwtLjA4LjExYTMuNSwzLjUsMCwwLDAtLjI4LjUybC0uMDYuMTVhMy40OCwzLjQ4LDAsMCwwLS4xNC40NGMwLC4wNiwwLC4xMiwwLC4xOGEzLjQ5LDMuNDksMCwwLDAtLjA2LjYzdjEyLjRsLTYuMjYsMy42NmExMy41NCwxMy41NCwwLDAsMC02LjcsMTEuNzF2My43NGEzLjQ3LDMuNDcsMCwwLDAtLjg3LjI2TDEuNTMsNTQuODZhMy40OSwzLjQ5LDAsMCwwLS40Ny4yNkwxLDU1LjE5YTMuNDgsMy40OCwwLDAsMC0uMzkuMzJsLS4xMi4xMkEzLjQ5LDMuNDksMCwwLDAsLjE1LDU2bC0uMDguMTFhMy41LDMuNSwwLDAsMC0uMjguNTJsLS4wNS4xNWEzLjQ3LDMuNDcsMCwwLDAtLjE0LjQ1YzAsLjA2LDAsLjEyLDAsLjE4QTMuNDgsMy40OCwwLDAsMC0uNTEsNThWNzUuODZhMy41LDMuNSwwLDAsMCwyLDMuMThsMTYuMDgsNy40MWEzLjUsMy41LDAsMCwwLDIuOTMsMGw2LjQzLTMsMTcuNDQsMTBhMTMuNTQsMTMuNTQsMCwwLDAsMTMuNS0uMDZMNzQuMDYsODRsNS40LDIuNDlhMy41LDMuNSwwLDAsMCwyLjkzLDBMOTguNDcsNzlhMy41LDMuNSwwLDAsMCwyLTMuMThWNThhMy40OCwzLjQ4LDAsMCwwLS4wNi0uNjNDMTAwLjQ0LDU3LjM1LDEwMC40Miw1Ny4yOSwxMDAuNDEsNTcuMjNaTTY4LjM0LDczLjYyVjYzLjUxbDkuMDgsNC4xOVY3Ny44MVptMTIuNTgtMTJMNzMuMiw1OGw3LjcyLTMuNTZMODguNjUsNThaTTM4LjQzLDIxLjE1bDkuMDgsNC4xOVYzNS40NWwtOS4wOC00LjE5Wm0xNi4wOCw0LjE5LDkuMDgtNC4xOVYzMS4yN2wtOS4wOCw0LjE5Wk01MSwxMi4xM2w3LjcyLDMuNTZMNTEsMTkuMjRsLTcuNzItMy41NlpNMTkuMDcsNTQuNDgsMjYuOCw1OCwxOS4wNyw2MS42LDExLjM1LDU4Wm0zLjUsMjMuMzNWNjcuNjlsOS4wOC00LjE5VjczLjYyWk02LjQ5LDYzLjUxbDkuMDgsNC4xOVY3Ny44MUw2LjQ5LDczLjYyWm00Ny45LDIzLjg0YTYuNTMsNi41MywwLDAsMS02LjUsMGwtMTMuMS03LjQ4TDM2LjYyLDc5YTMuNSwzLjUsMCwwLDAsMi0zLjE4VjU4YTMuNDgsMy40OCwwLDAsMC0uMDYtLjYzYzAtLjA2LDAtLjEyLDAtLjE4YTMuNDcsMy40NywwLDAsMC0uMTQtLjQ1bC0uMDUtLjE1YTMuNSwzLjUsMCwwLDAtLjI4LS41MkwzOCw1NmEzLjQ5LDMuNDksMCwwLDAtLjMxLS4zN2wtLjEyLS4xMmEzLjQ4LDMuNDgsMCwwLDAtLjM5LS4zMmwtLjA5LS4wN2EzLjQ5LDMuNDksMCwwLDAtLjQ3LS4yNkwyNS40OSw0OS43M2wwLTYuM2E2LjUyLDYuNTIsMCwwLDEsMy4yMi01LjY0bDMuNTMtMi4wNmEzLjQ5LDMuNDksMCwwLDAsMS4yNCwxTDQ5LjU0LDQ0LjFhMy41LDMuNSwwLDAsMCwyLjkzLDBsMTYuMDgtNy40MWEzLjQ5LDMuNDksMCwwLDAsMS4yOC0xbDMuMzMsMS45YTYuNTIsNi41MiwwLDAsMSwzLjI4LDUuNjJsMCw1LjYzLTEzLjA5LDZhMy40OSwzLjQ5LDAsMCwwLS40Ny4yNmwtLjA5LjA3YTMuNDgsMy40OCwwLDAsMC0uMzkuMzJsLS4xMi4xMkEzLjQ5LDMuNDksMCwwLDAsNjIsNTZsLS4wOC4xMWEzLjUsMy41LDAsMCwwLS4yOC41MmwtLjA1LjE1YTMuNDcsMy40NywwLDAsMC0uMTQuNDVjMCwuMDYsMCwuMTIsMCwuMThhMy40OCwzLjQ4LDAsMCwwLS4wNi42M1Y3NS44NmEzLjUsMy41LDAsMCwwLDIsMy4xOGwyLjkzLDEuMzVabTMwLTkuNTNWNjcuNjlsOS4wOC00LjE5VjczLjYyWiI+PC9wYXRoPjwvc3ZnPjwvZz48L2c+PC9zdmc+">
+                <span class="flex-dynamic navigation-title">Module</span>
+            </div>
+
+            <div class="line"></div>
+
+            <div id="notifications" class="flex-row flex-static navigation-item" selected="true" onclick="window.location='/module/notification/html/notifications.html';">
+                <img class="navigation-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MzYrMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEQyRjQ1Njc4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEQyRjQ1Njc4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowRDJGNDU2NzgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MEQyRjQ1Njc4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MzYrMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+xXdvCgAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA8dEVYdEFMVFRhZwBUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuINhr6MQAAABEdEVYdENvcHlyaWdodABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVze92woAAAAEVpVFh0RGVzY3JpcHRpb24AAAAAAFRoaXMgaXMgdGhlIGljb24gZnJvbSBHZW50bGVmYWNlLmNvbSBmcmVlIGljb25zIHNldC4gvBH4GgAAAEhpVFh0Q29weXJpZ2h0AAAAAABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVzWILLBQAAAaxJREFUeNrsmMFphFAQhnWJoKCwePDiIQ8sIHYQU0I6sIOQCkJKSAVLKkgLpoK4DRiDBw9eHii4rKh5HgKBhN0JvtExODDswWHf+94/82ZUUVZbjb51XRf2ff/W/7QX8cynvvmd8P6Ev5PdfNu2ofD+nI9Z4wITQKTIHfYhqZh/3jQN6HQ1TVPJKXA8Hn2hACQ0pppCHAjwRDaFDofDcMOwEyGRrus3Y9bYINfYrfD0N3WEP47dPLoCX1bXNfumBDcMI1ZW+yeGkkJVVQ3zzYPw7anr0zTNe5IAZVnuxE94Ls6yrNHro/QBcf9DJsxIxlpzAsQkATjnAbAD70kCAE+frgIC4BISZ9u2FACMUWKy/MdSIFgsQFEU/pQFjKHAJC8xaABi81eQOMdxIqoAkxYwBkCwWIA8zxkw/z9IAvyhA0eLBlBVNaYKcA0IS13X5TIBNhMrIP1lXooCWZYNXxy2gCLekwSYq4DnAIipAkBGCM4Y40tWAOVr3GiAJEmG4mWA0FeSAHPmvywAyAAnvQNLa2TQAvY8L6WqAJsrfWTdQpAO/KysthpN+xRgAAPRD/gk0BWxAAAAAElFTkSuQmCC">
+                <span class="flex-dynamic navigation-title">Notifications</span>
+            </div>
+
+            <div id="back" class="flex-row flex-static navigation-item" style="margin-top: auto; margin-bottom: 10px; border: solid 1px #FF5555;" onclick="window.location='/module/default/html/config/modules.html';">
+                <img class="navigation-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MzkrMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzA1RDQ2Njk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzA1RDQ2Njk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpDMDVENDY2OTgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6QzA1RDQ2Njk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MzkrMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+sflRwgAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA8dEVYdEFMVFRhZwBUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuINhr6MQAAABEdEVYdENvcHlyaWdodABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVze92woAAAAEVpVFh0RGVzY3JpcHRpb24AAAAAAFRoaXMgaXMgdGhlIGljb24gZnJvbSBHZW50bGVmYWNlLmNvbSBmcmVlIGljb25zIHNldC4gvBH4GgAAAEhpVFh0Q29weXJpZ2h0AAAAAABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVzWILLBQAAAZxJREFUeNrsl2uOgjAUhcG4CxB8sQ9nJ7iSWcq4k3EJLkJRMAqKL3y000uGiY48/cHcO+lJTkrSkpyvl5ZWUaSkpKT+hTjntrAPJheeMWYL88Skwt9uN1uY35tM+Ov1agvz3yYR/nK52MI8zXXmaL7y0vl8hgX7gWEiKwNEUYQmfGWA0+mEKnwlgOPxiC58aYDD4YAyfCmA/X6PNjyokde52+3i8MJKFYv3BnUBqFkdYRjaokE789+apAJst1sK4dPXwGazQf3N5wIEQUAq/AOA7/vkwv8ArNdrkuHjXWi1WsGW90n1JtgUMz9QCAsAxqJ9pwoQ/weWyyXdNZA8eJ5HEuLhT+y6LjmIp6PEYrEgBZF6FprP52QgMk+jjuNQgJioeb2z2ewlCFVV3zRNG/9pBRJNp9PKEK1WS62rBI2iAbquj0QzJHmlvJvRkajCkDGmlDE6AJBhGCgr0agy2DTNuBJFl3q0AKB2u10IgRoA1Ol0ciHQA4C63W4mBAkAUK/XS4UgAwDq9/tPEKQAQJZlJRABWJGSoqMvAQYAgwDMILIeu5EAAAAASUVORK5CYII=">
+                <span class="flex-dynamic navigation-title" style="color: #FF5555;">Back</span>
+            </div>
+        </div>
+
+        <!-- PAGE WRAPPER -->
+        <div id="page" class="flex-row flex-dynamic content">
+            <!-- CONTENT -->
+            <div class="flex-row flex-dynamic" style="height: 100%; flex-wrap: wrap;">
+                <div id="notification-wrapper" class="flex-column flex-static" style="width: 100%; height: 100%; margin-bottom: 10px; margin-right: 10px; overflow: auto;">
+                    <div id="notification-area" class="flex-column flex-dynamic area with-border" style="margin-bottom: 10px; background: #555555;">
+                        <div class="flex-column flex-static area with-border" style="background: #444444">
+                            <div class="notification-header">Discord Channel</div>
+
+                            <hr style="width: 100%;" />
+
+                            <div class="notification-description">Enter the name of the Discord channel these notifications should be forwarded to.</div>
+
+                            <hr style="width: 100%;" />
+
+                            <div class="flex-row flex-static area">
+                                <div class="flex-column flex-dynamic area with-border" style="margin-right: 5px; background: #333333;">
+                                    <div class="flex-row flex-static area">
+                                        <input id="input-channel-name" class="flex-row flex-dynamic" type="text" maxlength="100" style="height: 30px; margin-right: 10px; padding: 3px; font-size: 18px; font-weight: bold;" placeholder="Channel Name" required />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-column flex-static area with-border" style="margin-top: 10px; background: #444444">
+                            <div class="notification-header">Notification Filter</div>
+
+                            <hr style="width: 100%;" />
+
+                            <div class="notification-description">Notifications will only be forwarded if the user is a member of these factions, alliances or corporations. An alliance automatically includes all corporations within it and a faction includes all alliances and corporations within it. Be aware that you will only receive notifications from an alliance or corporation if at least one of its members is authenticated on your Discord server and he has the necessary ingame privileges to receive those notifications himself.</div>
+
+                            <hr style="width: 100%;" />
+
+                            <div class="flex-row flex-static area">
+                                <div id="filter-factions-area" class="flex-column flex-dynamic area with-border" style="margin-right: 5px; background: #333333;">
+                                    <div class="filter-header">Factions</div>
+                                    <hr style="width: 100%;" />
+                                    <div id="faction-filter-list" class="flex-column flex-dynamic"></div>
+                                    <hr style="width: 100%;" />
+                                    <div class="flex-row flex-static area">
+                                        <input id="input-faction-filter" class="flex-row flex-dynamic" type="text" maxlength="100" style="height: 30px; margin-right: 10px; padding: 3px; font-size: 18px; font-weight: bold;" placeholder="Faction Name (Caldari State, ...)" />
+                                        <button style="margin-left: auto;" new="true" onclick="add_faction_filter();">Add Faction</button>
+                                    </div>
+                                </div>
+
+                                <div id="filter-alliances-area" class="flex-column flex-dynamic area with-border" style="margin-left: 5px; margin-right: 5px; background: #333333;">
+                                    <div class="filter-header">Alliances</div>
+                                    <hr style="width: 100%;" />
+                                    <div id="alliance-filter-list" class="flex-column flex-dynamic"></div>
+                                    <hr style="width: 100%;" />
+                                    <div class="flex-row flex-static area">
+                                        <input id="input-alliance-filter" class="flex-row flex-dynamic" type="text" maxlength="100" style="height: 30px; margin-right: 10px; padding: 3px; font-size: 18px; font-weight: bold;" placeholder="Alliance Name" />
+                                        <button style="margin-left: auto;" new="true" onclick="add_alliance_filter();">Add Alliance</button>
+                                    </div>
+                                </div>
+
+                                <div id="filter-corporations-area" class="flex-column flex-dynamic area with-border" style="margin-left: 5px; background: #333333;">
+                                    <div class="filter-header">Corporations</div>
+                                    <hr style="width: 100%;" />
+                                    <div id="corporation-filter-list" class="flex-column flex-dynamic"></div>
+                                    <hr style="width: 100%;" />
+                                    <div class="flex-row flex-static area">
+                                        <input id="input-corporation-filter" class="flex-row flex-dynamic" type="text" maxlength="100" style="height: 30px; margin-right: 10px; padding: 3px; font-size: 18px; font-weight: bold;" placeholder="Corporation Name" />
+                                        <button style="margin-left: auto;" new="true" onclick="add_corporation_filter();">Add Corporation</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-column flex-static area with-border" style="margin-top: 10px; background: #444444">
+                            <div class="notification-header">Message Options</div>
+
+                            <hr style="width: 100%;">
+
+                            <div class="notification-description">Additional options for posting notification messages.</div>
+
+                            <hr style="width: 100%;">
+
+                            <div class="flex-column flex-dynamic area with-border" style="margin-right: 5px; background: #333333;">
+                                <div id="message-option-list">
+                                    <div id="PingEveryone" class="flex-row flex-static area" style="margin-bottom: 5px; background: rgb(34, 34, 34) none repeat scroll 0% 0%; cursor: pointer;" data-checked="no">
+                                        <div class="flex-column flex-dynamic area">
+                                            <div class="selection-header">Ping @everyone</div>
+                                            <div class="selection-description">Send a push notification and ping everyone with access to the channel.</div>
+                                        </div>
+                                        <div class="selection-option" style="width:80px; text-align: center; color: rgb(255, 0, 0); border-color: rgb(255, 0, 0);">No</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-column flex-static area with-border" style="margin-top: 10px; background: #444444">
+                            <div class="notification-header">Notifications</div>
+
+                            <hr style="width: 100%;" />
+
+                            <div class="notification-description">Select the notifications you want to forward to Discord. It can take up to 10 minutes for ingame notifications to be forwarded.</div>
+
+                            <hr style="width: 100%;" />
+
+                            <div id="notification-alliance-area" class="flex-column flex-dynamic area with-border" style="margin-right: 5px; background: #333333;">
+                                <div class="filter-header">Alliance</div>
+                                <hr style="width: 100%;" />
+                                <div id="alliance-notification-list"></div>
+                            </div>
+
+                            <div id="notification-corporation-area" class="flex-column flex-dynamic area with-border" style="margin-top: 10px; margin-right: 5px; background: #333333;">
+                                <div class="filter-header">Corporation</div>
+                                <hr style="width: 100%;" />
+                                <div id="corporation-notification-list"></div>
+                            </div>
+
+                            <div id="notification-faction-area" class="flex-column flex-dynamic area with-border" style="margin-top: 10px; margin-right: 5px; background: #333333;">
+                                <div class="filter-header">Factional Warfare</div>
+                                <hr style="width: 100%;" />
+                                <div id="faction-notification-list"></div>
+                            </div>
+
+                            <div id="notification-moonmining-area" class="flex-column flex-dynamic area with-border" style="margin-top: 10px; margin-right: 5px; background: #333333;">
+                                <div class="filter-header">Moonmining</div>
+                                <hr style="width: 100%;" />
+                                <div id="moonmining-notification-list"></div>
+                            </div>
+
+                            <div id="notification-sovereignty-area" class="flex-column flex-dynamic area with-border" style="margin-top: 10px; margin-right: 5px; background: #333333;">
+                                <div class="filter-header">Sovereignty</div>
+                                <hr style="width: 100%;" />
+                                <div id="sovereignty-notification-list"></div>
+                            </div>
+
+                            <div id="notification-structure-area" class="flex-column flex-dynamic area with-border" style="margin-top: 10px; margin-right: 5px; background: #333333;">
+                                <div class="filter-header">Structure</div>
+                                <hr style="width: 100%;" />
+                                <div id="structure-notification-list"></div>
+                            </div>
+
+                            <div id="notification-war-area" class="flex-column flex-dynamic area with-border" style="margin-top: 10px; margin-right: 5px; background: #333333;">
+                                <div class="filter-header">War</div>
+                                <hr style="width: 100%;" />
+                                <div id="war-notification-list"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-row flex-static area with-border" style="background: #555555;">
+                        <button id="btn-save-notification" new="true" onclick="save_notification();">Save Notification</button>
+                        <button id="btn-cancel" style="margin-left: auto;" delete="true" onclick="window.location='/module/notification/html/notifications.html';">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/third_party/js/socket.io.js"></script>
+    <script type="text/javascript" src="/module/notification/js/notification.js"></script>
+</body>
+</html>

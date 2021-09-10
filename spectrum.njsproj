@@ -1,0 +1,177 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Spectrum</Name>
+    <RootNamespace>Spectrum</RootNamespace>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>77c4e42d-db77-46ef-b532-7e9538d13ffb</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>False</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="bot.js" />
+    <Compile Include="data.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="disk.js" />
+    <Compile Include="environment.js" />
+    <Compile Include="esi.js" />
+    <Compile Include="memory.js" />
+    <Compile Include="output.js" />
+    <Compile Include="socket.js" />
+    <Compile Include="static\third_party\js\socket.io.js" />
+    <Compile Include="views.js" />
+    <Compile Include="web_server.js" />
+    <Content Include="modules.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="module\cleanup\module.js" />
+    <Content Include="module\default\actions.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="module\default\conditions.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="module\default\data.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="module\default\discord.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="module\default\endpoints.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="module\default\job.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="module\default\module.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="module\default\queue.js" />
+    <Content Include="module\notification\discord.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="module\notification\job.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="module\notification\module.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="module\notification\notifications.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="module\notification\queue.js" />
+    <Content Include="monitoring.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="static\favicon.ico" />
+    <Content Include="static\global\css\global.css" />
+    <Content Include="static\global\css\reset.css" />
+    <Content Include="static\module\default\css\auth\fail.css" />
+    <Content Include="static\module\default\css\auth\ok.css" />
+    <Content Include="static\module\default\css\auth\tokens.css" />
+    <Content Include="static\module\default\css\config\bot_control.css" />
+    <Content Include="static\module\default\css\config\condition.css" />
+    <Content Include="static\module\default\css\config\conditions.css" />
+    <Content Include="static\module\default\css\config\dashboard.css" />
+    <Content Include="static\module\default\css\config\fail.css" />
+    <Content Include="static\module\default\css\config\keyword.css" />
+    <Content Include="static\module\default\css\config\keywords.css" />
+    <Content Include="static\module\default\css\config\modules.css" />
+    <Content Include="static\module\default\css\config\operator.css" />
+    <Content Include="static\module\default\css\config\operators.css" />
+    <Content Include="static\module\default\css\config\rule.css" />
+    <Content Include="static\module\default\css\config\rules.css" />
+    <Content Include="static\module\default\css\config\scopes.css" />
+    <Content Include="static\module\default\html\auth\fail.html" />
+    <Content Include="static\module\default\html\auth\ok.html" />
+    <Content Include="static\module\default\html\auth\tokens.html" />
+    <Content Include="static\module\default\html\config\bot_control.html" />
+    <Content Include="static\module\default\html\config\condition.html" />
+    <Content Include="static\module\default\html\config\conditions.html" />
+    <Content Include="static\module\default\html\config\dashboard.html" />
+    <Content Include="static\module\default\html\config\fail.html" />
+    <Content Include="static\module\default\html\config\keyword.html" />
+    <Content Include="static\module\default\html\config\keywords.html" />
+    <Content Include="static\module\default\html\config\modules.html" />
+    <Content Include="static\module\default\html\config\operator.html" />
+    <Content Include="static\module\default\html\config\operators.html" />
+    <Content Include="static\module\default\html\config\rule.html" />
+    <Content Include="static\module\default\html\config\rules.html" />
+    <Content Include="static\module\default\html\config\scopes.html" />
+    <Content Include="static\module\default\js\auth\tokens.js" />
+    <Content Include="static\module\default\js\config\bot_control.js" />
+    <Content Include="static\module\default\js\config\condition.js" />
+    <Content Include="static\module\default\js\config\conditions.js" />
+    <Content Include="static\module\default\js\config\dashboard.js" />
+    <Content Include="static\module\default\js\config\keyword.js" />
+    <Content Include="static\module\default\js\config\keywords.js" />
+    <Content Include="static\module\default\js\config\modules.js" />
+    <Content Include="static\module\default\js\config\operator.js" />
+    <Content Include="static\module\default\js\config\operators.js" />
+    <Content Include="static\module\default\js\config\rule.js" />
+    <Content Include="static\module\default\js\config\rules.js" />
+    <Content Include="static\module\default\js\config\scopes.js" />
+    <Content Include="static\module\notification\css\module.css" />
+    <Content Include="static\module\notification\css\notification.css" />
+    <Content Include="static\module\notification\css\notifications.css" />
+    <Content Include="static\module\notification\html\module.html" />
+    <Content Include="static\module\notification\html\notification.html" />
+    <Content Include="static\module\notification\html\notifications.html" />
+    <Content Include="static\module\notification\js\module.js" />
+    <Content Include="static\module\notification\js\notification.js" />
+    <Content Include="static\module\notification\js\notifications.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="module\" />
+    <Folder Include="module\default\" />
+    <Folder Include="module\cleanup\" />
+    <Folder Include="module\notification\" />
+    <Folder Include="static\" />
+    <Folder Include="static\global\css\" />
+    <Folder Include="static\module\" />
+    <Folder Include="static\module\default\" />
+    <Folder Include="static\module\default\css\" />
+    <Folder Include="static\module\default\css\auth\" />
+    <Folder Include="static\module\default\css\config\" />
+    <Folder Include="static\module\default\html\" />
+    <Folder Include="static\module\default\html\auth\" />
+    <Folder Include="static\module\default\html\config\" />
+    <Folder Include="static\module\default\js\" />
+    <Folder Include="static\module\default\js\auth\" />
+    <Folder Include="static\module\default\js\config\" />
+    <Folder Include="static\module\notification\" />
+    <Folder Include="static\module\notification\css\" />
+    <Folder Include="static\module\notification\html\" />
+    <Folder Include="static\module\notification\js\" />
+    <Folder Include="static\global\" />
+    <Folder Include="static\third_party\" />
+    <Folder Include="static\third_party\js\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>

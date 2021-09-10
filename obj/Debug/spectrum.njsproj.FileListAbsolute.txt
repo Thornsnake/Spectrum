@@ -1,0 +1,6 @@
+J:\Sync\Programmierung\Javascript\spectrum\spectrum\obj\Debug\spectrum.njsprojAssemblyReference.cache
+J:\Sync\Programmierung\Javascript\spectrum\spectrum\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Sync\Programmierung\Javascript\spectrum\spectrum\obj\Debug\spectrum.njsprojAssemblyReference.cache
+C:\Sync\Programmierung\Javascript\spectrum\spectrum\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Sync\Programmierung\Javascript\Spectrum - Backup\Spectrum\obj\Debug\Spectrum.njsprojAssemblyReference.cache
+C:\Sync\Programmierung\Javascript\Spectrum - Backup\Spectrum\bin\Microsoft.NodejsTools.WebRole.dll

@@ -1,0 +1,17 @@
+{
+  "name": "spectrum",
+  "version": "0.0.0",
+  "description": "spectrum",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "discord.js": "^12.4.1",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "loadavg-windows": "^1.1.1",
+    "socket.io": "^2.3.0"
+  }
+}

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/global/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/global/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/module/default/css/auth/tokens.css">
+
+    <title>Spectrum - Configuration</title>
+</head>
+<body>
+    <div id="main" class="flex-row">
+        <!-- Navigation -->
+        <div id="navigation-panel" class="flex-column flex-static navigation-panel" style="width: 350px; overflow: auto;"></div>
+
+        <!-- PAGE WRAPPER -->
+        <div id="page" class="flex-row flex-dynamic content">
+            <!-- CONTENT -->
+            <div class="flex-row flex-dynamic" style="height: 100%; flex-wrap: wrap;">
+                <div id="token-wrapper" class="flex-column flex-static" style="width: 100%; height: 100%; margin-bottom: 10px; margin-right: 10px;">
+                    <div id="token-area" class="flex-column flex-dynamic area with-border" style="margin-bottom: 10px; background: #555555; overflow: auto;"></div>
+
+                    <div class="flex-row flex-static area with-border" style="background: #555555">
+                        <button id="btn-add-character" new="true";>Add Character</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/third_party/js/socket.io.js"></script>
+    <script type="text/javascript" src="/module/default/js/auth/tokens.js"></script>
+</body>
+</html>

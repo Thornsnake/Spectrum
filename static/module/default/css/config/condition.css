@@ -1,0 +1,175 @@
+﻿.condition-header {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DDDDDD;
+    background: #222222;
+    border: 1px solid #FFFFFF;
+}
+
+.condition-body {
+    min-height: 80px;
+    padding: 15px;
+    font-size: 20px;
+    background: #333333;
+    flex-wrap: wrap;
+    overflow:auto;
+}
+
+.condition-description {
+    max-width: 100%;
+    max-height: 300px;
+    min-height: 150px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DDDDDD;
+    background: #222222;
+    border: 1px solid #FFFFFF;
+}
+
+.condition-group-header {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #DDDDDD;
+    background: #333333;
+}
+
+    .condition-group-header:not(:first-child) {
+        margin-top: 5px;
+    }
+
+.toolbox-header {
+    padding: 5px;
+    border: solid 2px #AAAAAA;
+    box-shadow: 2px 0px #000000;
+    font-size: 20px;
+    color: #DDDDDD;
+    background: #333333;
+    cursor: pointer;
+}
+
+    .toolbox-header:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .toolbox-header[status="expanded"] {
+        border-bottom: none;
+    }
+
+    .toolbox-header[status="collapsed"] {
+        border-bottom: solid 2px #AAAAAA;
+    }
+
+.toolbox-group {
+    padding: 10px;
+    border: solid 2px #AAAAAA;
+    border-top: none;
+    box-shadow: 3px 1px #000000;
+    background: #333333;
+}
+
+.toolbox-element {
+    height: 28px;
+    padding: 5px;
+    border: solid 1px #000000;
+    background: #333333;
+    cursor: pointer;
+}
+
+.toolbox-group > .toolbox-element:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.toolbox-group > .toolbox-element {
+    height: auto;
+}
+
+.toolbox-element[endpoint-type="alliance"] {
+    background: #99DDDD;
+}
+
+.toolbox-element[endpoint-type="corporation"] {
+    background: #AADDAA;
+}
+
+.toolbox-element[endpoint-type="character"] {
+    background: #DDDDAA;
+}
+
+.toolbox-element[endpoint-type="faction"] {
+    background: #AAAADD;
+}
+
+.toolbox-element[endpoint-type="comparator"] {
+    background: #DDDDDD;
+}
+
+.toolbox-element[endpoint-type="direction"] {
+    background: #DDDDDD;
+}
+
+.toolbox-element[endpoint-type="entity"] {
+    background: #DDDDDD;
+}
+
+.toolbox-element[endpoint-type="logic"] {
+    background: #DDAAAA;
+}
+
+.toolbox-element[endpoint-type="indicator"] {
+    background: #DDDDDD;
+}
+
+.toolbox-element[endpoint-type="authentication"] {
+    background: #FFFFFF;
+}
+
+.toolbox-element[endpoint-type="roles"] {
+    background: #FFFFFF;
+}
+
+.toolbox-element[endpoint-type="condition"] {
+    background: #DD6666;
+}
+
+.element-name {
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.data-type {
+    width: 16px;
+    height: 16px;
+    border: solid 1px #000000;
+    font-family: "Impact";
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+}
+
+    .data-type[data-type="number"] {
+        background: #AA3333;
+    }
+
+    .data-type[data-type="string"] {
+        background: #33AA33;
+    }
+
+    .data-type[data-type="boolean"] {
+        background: #AAAA33;
+    }
+
+    .data-type[data-type="comparator"] {
+        background: #AAAAAA;
+    }
+
+    .data-type[data-type="logic"] {
+        background: #AAAAAA;
+    }

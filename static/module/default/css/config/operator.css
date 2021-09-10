@@ -1,0 +1,84 @@
+﻿.discord-user-header {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DDDDDD;
+    background: #222222;
+}
+
+.discord-user-description {
+    width: 100%;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.discord-user-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: #222222;
+}
+
+.discord-user-option {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: #222222;
+    cursor: pointer;
+}
+
+.discord-user-option-description {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.discord-user-option-checkbox {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding: 5px;
+    border: solid 3px #FFFFFF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #333333;
+}
+
+.operator-header {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DDDDDD;
+    background: #222222;
+    border: 1px solid #FFFFFF;
+}
+
+.operator-description {
+    max-width: 100%;
+    max-height: 300px;
+    min-height: 150px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DDDDDD;
+    background: #222222;
+    border: 1px solid #FFFFFF;
+}
+
+.operator-body {
+    min-height: 80px;
+    padding: 5px;
+    font-size: 20px;
+    background: #333333;
+    flex-wrap: wrap;
+}

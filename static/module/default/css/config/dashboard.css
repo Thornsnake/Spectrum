@@ -1,0 +1,41 @@
+﻿.area-header {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    border: solid 1px #FFFFFF;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, #45484d 0%,#000000 100%);
+}
+
+.area-row {
+    padding: 5px;
+    font-size: 20px;
+    background: #333333;
+}
+
+.area-attribute {
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.area-value {
+    white-space: nowrap;
+}
+
+    .area-value[positive] {
+        color: #55FF55;
+    }
+
+    .area-value[warning] {
+        color: #FFFF55;
+    }
+
+    .area-value[negative] {
+        color: #FF5555;
+    }
+
+    .area-value[information] {
+        color: #CCCCCC;
+    }
